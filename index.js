@@ -34,21 +34,24 @@
     console.log(main());
     
  // Rechercher le maximum et le minimum : écrivez des fonctions pour trouver les valeurs maximales et minimales dans un tableau de nombres.
+    
+  function  trouverMaximum(tab) {
+  let max = Math.max(...tab);
+  return tab.filter(num => num === max)[0]; // Renvoie l'unique élément égal au max
+}
+
+function trouverMinimum(tab) {
+  let min = Math.min(...tab);
+  return tab.filter(num => num === min)[0]; // Renvoie l'unique élément égal au min
+}
+
+console.log(trouverMaximum());
+
+console.log(trouverMinimum());
+
+
 
     
-    let moa = [12,15,20,32,50]
-
-    function RechercherMaximumEtMinimum(d) {
-        
-          return d.filter((p,k) =>{
-
-               if (k==0 || k == 4) {
-                return p
-               } })
-                
-        }
-    
-    console.log( RechercherMaximumEtMinimum());
 
 // Somme d'un tableau : créez une fonction qui calcule la somme de tous les éléments d'un tableau.
 
